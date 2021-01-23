@@ -1,2 +1,2 @@
 # pythontest
- Aprendendo Python
+ Estudos de Python
