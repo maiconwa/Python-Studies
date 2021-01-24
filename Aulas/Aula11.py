@@ -1,1 +1,2 @@
-print('\033[7;31;46mOlá, Mundo!\033[m')
+s = 'prova de python'
+print(len(s))
