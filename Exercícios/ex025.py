@@ -1,2 +1,2 @@
-nome = input(str('Digite o seu nome: '))
-print(nome.find('silva'))
+nome = input(str('Digite o seu nome: ')).strip()
+print('Seu nome tem Silva? {}'.format('SILVA' in nome.upper()))
