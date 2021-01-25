@@ -12,5 +12,5 @@ if media < 5.0:
     print('O aluno obteve a média {}. O aluno está REPROVADO.'.format(media))
 elif 5.0 <= media <= 6.9:
     print('O aluno obteve a média {}. O aluno está de RECUPERAÇÃO.'.format(media))
-elif media > 7.0:
+elif media >= 7.0:
     print('O aluno está APROVADO com {} de média.'.format(media))
