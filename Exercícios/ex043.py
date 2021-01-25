@@ -19,4 +19,4 @@ elif 25 < imc < 30:
 elif 30 < imc < 40:
     print('O seu peso é {}Kg, sua altura é {}m, o IMC é {:.2f}, obesidade.'.format(peso, altura, imc))
 elif 40 < imc:
-    print('O seu peso é {}Kg, sua altura é {}m, o IMC é {:.2f}, obsidade mórbida'.format(peso, altura, imc))
+    print('O seu peso é {}Kg, sua altura é {}m, o IMC é {:.2f}, obsidade mórbida. CUIDADO!'.format(peso, altura, imc))
