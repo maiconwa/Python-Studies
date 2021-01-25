@@ -12,6 +12,7 @@ ano = int(date.today().year)
 if ano - nascimento > int(18):
     print('Você tem {} anos, seu periodo de alistamento já passou.'.format(ano - nascimento))
 elif ano - nascimento < int(18):
-    print('Você tem {} anos, lembre-se que você ainda irá se alistar.'.format(ano - nascimento))
+    restante = 18 - (ano - nascimento)
+    print('Você tem {} anos, lembre-se que você ainda irá se alistar em {} anos.'.format(ano - nascimento, restante))
 elif ano - nascimento == int(18):
     print('Você tem {} anos. Chegou a hora de se alistar.'.format(ano - nascimento))
