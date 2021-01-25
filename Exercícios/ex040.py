@@ -7,10 +7,10 @@ com a média atingida:
 
 nota1 = float(input('Digite a primeira nota do aluno: '))
 nota2 = float(input('Digite a segunda nota do aluno: '))
-media = float((nota1 + nota2) // 2)
+media = (nota1 + nota2) / 2
 if media < 5.0:
-    print('O aluno obteve a média {}. O aluno está REPROVADO.'.format(media))
+    print('O aluno obteve a média {:.1f}. O aluno está REPROVADO.'.format(media))
 elif 5.0 <= media <= 6.9:
-    print('O aluno obteve a média {}. O aluno está de RECUPERAÇÃO.'.format(media))
+    print('O aluno obteve a média {:.1f}. O aluno está de RECUPERAÇÃO.'.format(media))
 elif media >= 7.0:
-    print('O aluno está APROVADO com {} de média.'.format(media))
+    print('O aluno está APROVADO com {:.1f} de média.'.format(media))
