@@ -10,14 +10,14 @@ categoria, de acordo com a idade.
 from datetime import date
 nascimento = int(input('Digite o ano de nascimento do atleta: '))
 ano = int(date.today().year)
-classificacao = ano - nascimento
-if classificacao <= 9:
-    print('A categoria para este atleta que tem {} anos é a MIRIM.'.format(classificacao))
-elif 9 < classificacao <= 14:
-    print('A categoria para este atleta que tem {} anos é a INFANTIL.'.format(classificacao))
-elif 14 < classificacao <= 19:
-    print('A categoria para este atleta que tem {} anos é a JÚNIOR.'.format(classificacao))
-elif 19 < classificacao <= 20:
-    print('A categoria para este atleta que tem {} anos é a SÊNIOR'.format(classificacao))
-elif classificacao > 20:
-    print('A categoria para este atleta que tem {} anos é a MASTER'.format(classificacao))
+idade = ano - nascimento
+if idade <= 9:
+    print('A categoria para este atleta que tem {} anos é a MIRIM.'.format(idade))
+elif idade <= 14:
+    print('A categoria para este atleta que tem {} anos é a INFANTIL.'.format(idade))
+elif idade <= 19:
+    print('A categoria para este atleta que tem {} anos é a JÚNIOR.'.format(idade))
+elif idade <= 20:
+    print('A categoria para este atleta que tem {} anos é a SÊNIOR'.format(idade))
+else:
+    print('A categoria para este atleta que tem {} anos é a MASTER'.format(idade))
