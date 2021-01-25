@@ -12,8 +12,12 @@ idade = ano - nascimento
 if idade > 18:
     alistamento = idade - 18
     print('Você tem {} anos, seu periodo de alistamento já passou faz {} anos.'.format(idade, alistamento))
+    data = ano - alistamento
+    print('Seu alistamento foi em {}'.format(data))
 elif idade < 18:
     alistamento = 18 - idade
     print('Você tem {} anos, lembre-se que você ainda irá se alistar em {} anos.'.format(idade, alistamento))
+    data = ano - alistamento
+    print('Seu alistamento será em {}'.format(data))
 elif idade == 18:
     print('Você tem {} anos. Chegou a hora de se alistar.'.format(idade))
