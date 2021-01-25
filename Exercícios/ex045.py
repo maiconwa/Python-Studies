@@ -5,23 +5,49 @@ Crie um programa que faça o computador jogar Jokenpô com você.
 - Tesoura ganha de papel."""
 
 from random import randint
-print('-+=+-'*20)
-print('VAMOS JOGAR JOKENPÔ:')
-print('-+=+-'*20)
-print('Escolha conforme abaixo: ')
-print('-+=+-'*20)
-print('Digite 1 para pedra: ')
-print('Digite 2 para papel: ')
-print('Digite 3 para tesoura: ')
-print('-+=+-'*20)
-escolha = int(input('Digite aqui: '))
-print('-+=+-'*20)
-computador = randint(1, 3)
-if escolha == 1 and computador == 3 or escolha == 2 and computador == 1 or escolha == 3 and computador == 2:
-    print('Você conseguiu me vencer. Parabéns!')
-    print('-+=+-' * 20)
-elif computador == 1 and escolha == 3 or computador == 2 and escolha == 1 or computador == 3 and escolha == 2:
-    print('Eu venci! Mais sorte na próxima vez.')
-    print('-+=+-' * 20)
-elif computador == escolha:
-    print('Empatamos, temos de jogar novamente outra hora.')
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print(''' Escolha uma das opções abaixo:
+[0] Pedra
+[1] Papel
+[2] Tesoura''')
+jogador = int(input('Qual é a sua escolha? '))
+print('-=' * 15)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+print('-=' * 15)
+print('O jogador jogou {}'.format(itens[jogador]))
+print('O computador jogou {}'.format(itens[computador]))
+print('-=' * 15)
+if computador == 0: # computador jogou PEDRA
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('O JOGADOR VENCEU!')
+    elif jogador == 2:
+        print('O COMPUTADOR VENCEU!')
+    else:
+        print('JOGADA INVÁLIDA!')
+elif computador == 1: # computador jogou PAPEL
+    if jogador == 0:
+        print('O COMPUTADOR VENCEU!')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('O JOGADOR VENCEU!')
+    else:
+        print('JOGADA INVÁLIDA!')
+elif computador == 2: # computador jogou TESOURA
+    if jogador == 0:
+        print('O JOGADOR VENCEU!')
+    elif jogador == 1:
+        print('O COMPUTADOR VENCEU!')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA!')
+print('-=' * 15)
