@@ -36,8 +36,9 @@ elif pagamento == 4:
     parcelamento = float(input('Em quantas vezes o produto será parcelado? '))
     juros = (produto * 30) / 100
     valorf = juros + produto
+    parcela = valorf / parcelamento
     print('O parcelamento foi de {:.0f} vezes no cartão. O juros é R$ {:.2f}'.format(parcelamento, juros))
-    print('O valor total a ser pago é R$ {:.2f}'.format(valorf))
+    print('O valor total a ser pago é R$ {:.2f}. Cada parcela tem o valor de R$ {:.2f}'.format(valorf, parcela))
 else:
     print('-=-' * 14)
     print('Digite uma das oções de [1] a [4].')
