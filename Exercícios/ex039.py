@@ -6,14 +6,14 @@ Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo 
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo."""
 
 from datetime import date
-nascimento = int(input('Digite o ano em que você nasceu: '))
 ano = int(date.today().year)
-
-if ano - nascimento > int(18):
-    alistamento = (ano - nascimento) - 18
-    print('Você tem {} anos, seu periodo de alistamento já passou faz {} anos.'.format(ano - nascimento, alistamento))
-elif ano - nascimento < int(18):
-    alistamento = 18 - (ano - nascimento)
-    print('Você tem {} anos, lembre-se que você ainda irá se alistar em {} anos.'.format(ano - nascimento, alistamento))
-elif ano - nascimento == int(18):
-    print('Você tem {} anos. Chegou a hora de se alistar.'.format(ano - nascimento))
+nascimento = int(input('Digite o ano em que você nasceu: '))
+idade = ano - nascimento
+if idade > 18:
+    alistamento = idade - 18
+    print('Você tem {} anos, seu periodo de alistamento já passou faz {} anos.'.format(idade, alistamento))
+elif idade < 18:
+    alistamento = 18 - idade
+    print('Você tem {} anos, lembre-se que você ainda irá se alistar em {} anos.'.format(idade, alistamento))
+elif idade == 18:
+    print('Você tem {} anos. Chegou a hora de se alistar.'.format(idade))
