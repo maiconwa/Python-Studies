@@ -9,7 +9,7 @@ com a tabela abaixo:
 
 peso = float(input('Digite o seu peso: (Kg) '))
 altura = float(input('Digite a sua altura: (m) '))
-imc = (peso / (altura ** 2)) * 10000
+imc = peso / (altura ** 2)
 if imc < 18.5:
     print('O seu peso é {}Kg, sua altura é {}m, o IMC é {:.1f}, abaixo do peso.'.format(peso, altura, imc))
 elif 18.5 < imc < 25:
