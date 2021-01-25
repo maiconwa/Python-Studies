@@ -29,7 +29,9 @@ elif pagamento == 2:
     print('O valor do produto é R$ {:.2f}, com desconto de 05% o valor a ser pago é R$ {:.2f}'.format(produto, valorf))
     print('O valor do desconto foi de R$ {:.2f}'.format(desconto))
 elif pagamento == 3:
+    parcelamento = produto / 2
     print('O valor a ser pago no parcelamento em 2 vezes é R$ {:.2f}'.format(produto))
+    print('O valor de cada parcela é R$ {}'.format(parcelamento))
 elif pagamento == 4:
     parcelamento = float(input('Em quantas vezes o produto será parcelado? '))
     juros = (produto * 30) / 100
