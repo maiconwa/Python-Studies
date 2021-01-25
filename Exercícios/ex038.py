@@ -9,7 +9,7 @@ num2 = int(input('Digite um o segundo número inteiro: '))
 
 if num1 > num2:
     print('O primeiro valor, número {} é maior que o número {}.'.format(num1, num2))
-elif num2 > num1:
+elif num1 < num2:
     print('O segundo valor, número {} é maior que o número {}.'.format(num2, num1))
-elif num1 == num2:
+else:
     print('Não exite valor maior. O primeiro número {} é igual ao segundo número {}.'.format(num1, num2))
