@@ -2,7 +2,9 @@
 encontram no intervalo de 1 até 500. """
 
 soma = 0
-for c in range(0, 500):
-    if c % 2 != 0 and c % 3 == 0:
+cont = 0
+for c in range(1, 500, 2):
+    if c % 3 == 0:
         soma += c
-print(soma)
+        cont += 1
+print('A soma de todos estes valores é {}, foram somados {} numeros'.format(soma, cont))
