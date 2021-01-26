@@ -5,3 +5,7 @@ Ex: A SACADA DA CASA
 Ex: A TORRE DA DERROTA
 Ex: O LOBO AMA O BOLO
 Ex: ANOTARAM A DATA DA MARATONA"""
+
+palindromo = str(input('Digite uma frase: ')).strip().upper()
+a = palindromo.split()
+print(a)
