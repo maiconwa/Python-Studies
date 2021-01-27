@@ -3,8 +3,8 @@ Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o 
 peso = 0
 menor = 0
 maior = 0
-for c in range(0, 5):
-    peso = int(input('Digite o peso de uma pessoa: '))
+for c in range(1, 6):
+    peso = float(input('Digite o peso da {}ª pessoa: '.format(c)))
     if peso > maior:
         maior = peso
         if menor == 0:
