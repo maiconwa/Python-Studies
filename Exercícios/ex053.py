@@ -6,6 +6,14 @@ Ex: A TORRE DA DERROTA
 Ex: O LOBO AMA O BOLO
 Ex: ANOTARAM A DATA DA MARATONA"""
 
-palindromo = str(input('Digite uma frase: ')).strip().upper()
-a = palindromo.split()
-print(a)
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+tudojunto = ''.join(palavras)
+inverso = tudojunto[::-1]
+'''for letra in range(len(tudojunto) - 1, - 1, - 1):
+    inverso += tudojunto[letra]'''
+print('O inverso de {} é {}'.format(tudojunto, inverso))
+if tudojunto == inverso:
+    print('A frase é um palindromo.')
+else:
+    print('A frase não é um palindromo.')
