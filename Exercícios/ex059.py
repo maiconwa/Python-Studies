@@ -15,7 +15,8 @@ n2 = 0
 while continuar != 'N':
     n1 = float(input('Informe o primeiro valor: '))
     n2 = float(input('Informe o segundo valor: '))
-    print('''    Escolha uma das operações abaixo: 
+    print('''    
+    Escolha uma das operações abaixo: 
     [ 1 ] somar
     [ 2 ] multiplicar
     [ 3 ] maior
@@ -47,4 +48,4 @@ while continuar != 'N':
     else:
         print('Por favor digite uma das opções válidas.')
 print('======Programa encerrado======')
-print('======Tenha um bom dia======')
+print('=======Tenha um bom dia=======')
