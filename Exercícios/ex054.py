@@ -2,13 +2,13 @@
 atingiram a maioridade e quantas já são maiores."""
 
 from datetime import date
-atual = int(date.today().year)
+atual = date.today().year
 pessoasn = 0
 pessoasv = 0
-for c in range(0, 7):
-    ano = int(input('Em que ano você nasceu: '))
+for c in range(1, 8):
+    ano = int(input('Em que ano a {}º pessoa nasceu: '.format(c)))
     idade = atual - ano
-    if 18 > idade:
+    if 21 >= idade:
         pessoasn += 1
     else:
         pessoasv += 1
