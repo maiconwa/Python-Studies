@@ -5,14 +5,12 @@ Exemplo: 5; = 5x4x3x2x1 = 120
 
 com enquanto e for"""
 
+
 num1 = int(input('Digite um número a ser fatorado: '))
-num2 = num1
-n = 0
-v = 0
-while num2 > 1:
-    print(num1 - n)
-    if num1 > 1:
-        v *= num1
-    n += 1
+num2 = num1 - 1
+f = 0
+while num2 < num1:
+    print(num1 * (num1 - f))
+    f += 1
     num2 -= 1
-print(v)
+    num1 -= 1
