@@ -1,6 +1,6 @@
-# *Estudos da linguagem Python*
+# *Python language Studies*
  
- Repositório pessoal e publico dos meus projetos para estudo da linguagem de programação Python.
+ Personal and public repository of my Python study projects. 
 
  
  **Maicon**
