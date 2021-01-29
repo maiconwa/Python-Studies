@@ -5,12 +5,21 @@ Exemplo: 5; = 5x4x3x2x1 = 120
 
 com enquanto e for"""
 
+'''
+numero = int(input("Fatorial de: "))
+resultado = 1
+count = 1
 
-num1 = int(input('Digite um número a ser fatorado: '))
-num2 = num1 - 1
-f = 0
-while num2 < num1:
-    print(num1 * (num1 - f))
-    f += 1
-    num2 -= 1
-    num1 -= 1
+while count <= numero:
+    resultado *= count
+    count += 1
+
+print(resultado)
+'''
+numero = int(input("Fatorial de: "))
+resultado = 1
+count = 1
+for count in range(0, numero):
+    resultado *= count
+
+print(resultado)
