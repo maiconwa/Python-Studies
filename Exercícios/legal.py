@@ -1,0 +1,21 @@
+import emoji
+pessoa = str(input('Digita o nome de uma pessoa pra saber se ela é legal aqui: ')).strip().title()
+if pessoa == 'Vanessa':
+    print(emoji.emojize(':sparkling_heart:' * 28))
+    print(emoji.emojize(':sparkling_heart:' * 28))
+    print(emoji.emojize(':fireworks:' * 28))
+    print('-=-' * 28)
+    print('O poder de ser massa da {} é acima de 8000!!!'.format(pessoa))
+    print('Sei que o trabalho ta te deixando mal, mas espero que melhore e que te ouçam mais.')
+    print('-=-' * 28)
+    print(emoji.emojize(':fireworks:' * 28))
+    print(emoji.emojize(':sparkling_heart:' * 28))
+    print(emoji.emojize(':sparkling_heart:' * 28))
+else:
+    print('Pessoa ok')
+print('-=-' * 28)
+print('O problema no fim é o capitalismo, deixar isso posto aqui')
+print('-=-' * 28)
+print('Nota: Se não melhorar te ajudo com os galões de querosene e os molotovs!!!')
+print('-=-' * 28)
+print('FIM')
