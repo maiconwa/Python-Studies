@@ -3,4 +3,3 @@
  Personal and public repository of my Python study projects. 
 
  
- **Maicon**
