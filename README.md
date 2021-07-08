@@ -1,5 +1,5 @@
 # *Python language Studies*
  
- Personal and public repository of my Python study projects. 
+ Personal repository of my Python study projects. 
 
  
